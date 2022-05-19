@@ -1,10 +1,10 @@
 
 
 ## Описание, согласно критериям
-1. Наличие ТЗ: 
-2. ТЗ, оформленное в XML, корректное относительно DTD:
-3. ER диаграмма модели предметной области: 
-4. Тестовые данные: 
+1. Наличие ТЗ: https://github.com/dimaStepul/prog-engeneriing/blob/main/ТЗ.docx
+2. ТЗ, оформленное в XML, корректное относительно DTD: https://github.com/dimaStepul/prog-engeneriing/blob/main/Spec.xml
+3. ER диаграмма модели предметной области: https://github.com/dimaStepul/prog-engeneriing/blob/main/ER-diagrams/ER-Schema.png
+4. Тестовые данные: https://github.com/dimaStepul/prog-engeneriing/blob/main/src/main/sql/project1.sql
 5. Инструкция по использованию находится в ТЗ. Полное описание можно прочитать ниже.
 
 
