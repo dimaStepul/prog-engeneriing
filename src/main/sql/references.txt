@@ -1,0 +1,17 @@
+TransportModel Transport:Model N:1
+
+RouteBeginning Route:Stop N:1
+RouteEnd Route:Stop N:1
+
+TimetableEntryRoute Timetable:Route N:1
+TimetableEntryStop Timetable:Stop N:1
+
+ShiftTransport DailyRoute:Transport N:1
+ShiftRoute DailyRoute:Route N:1
+ShiftDriver DailyRoute:Driver N:1
+
+LogEntryShift Log:DailyRoute N:1
+LogEntryStop Log:Stop N:1
+
+TicketTypeRecord Booking:Ticket N:1
+RouteRecord Booking:DailyRoute N:1

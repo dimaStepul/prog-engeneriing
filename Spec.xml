@@ -1,0 +1,128 @@
+<ISSPECS>
+    <DESCRIPTION>
+        <TITLE>Nskgortrans</TITLE>
+        <SUBJ>Python, REST, QA, Development, ORM,peewee,cherrypy</SUBJ>
+    </DESCRIPTION>
+    <DATA>
+        <ENTITY ent_id="Model">
+            <PROPERTY>id</PROPERTY>
+            <PROPERTY>type</PROPERTY>
+            <PROPERTY>name</PROPERTY>
+            <PROPERTY>capacity</PROPERTY>
+        </ENTITY>
+        <ENTITY ent_id="Transport">
+            <PROPERTY>id</PROPERTY>
+            <PROPERTY>year</PROPERTY>
+            <PROPERTY>condition</PROPERTY>
+            <PROPERTY>model_id</PROPERTY>
+        </ENTITY>
+        <ENTITY ent_id="Stop">
+            <PROPERTY>id</PROPERTY>
+            <PROPERTY>address</PROPERTY>
+            <PROPERTY>platform_count</PROPERTY>
+        </ENTITY>
+        <ENTITY ent_id="Route">
+            <PROPERTY>id</PROPERTY>
+            <PROPERTY>transport_type</PROPERTY>
+            <PROPERTY>first_stop_id</PROPERTY>
+            <PROPERTY>last_stop_id</PROPERTY>
+        </ENTITY>
+        <ENTITY ent_id="Timetable">
+            <PROPERTY>id</PROPERTY>
+            <PROPERTY>route_id</PROPERTY>
+            <PROPERTY>stop_id</PROPERTY>
+            <PROPERTY>platform</PROPERTY>
+            <PROPERTY>arrival_time</PROPERTY>
+        </ENTITY>
+        <ENTITY ent_id="Daik=ly_route">
+            <PROPERTY>id</PROPERTY>
+            <PROPERTY>day</PROPERTY>
+            <PROPERTY>transport_id</PROPERTY>
+            <PROPERTY>route_id</PROPERTY>
+            <PROPERTY>departure_time_id</PROPERTY>
+            <PROPERTY>driver_licence</PROPERTY>
+        </ENTITY>
+        <ENTITY ent_id="Driver">
+            <PROPERTY>licence</PROPERTY>
+            <PROPERTY>name</PROPERTY>
+            <PROPERTY>surname</PROPERTY>
+            <PROPERTY>patronymic</PROPERTY>
+        </ENTITY>
+        <ENTITY ent_id="Logbook">
+            <PROPERTY>daily_route_id</PROPERTY>
+            <PROPERTY>stop_id</PROPERTY>
+            <PROPERTY>arrival_time</PROPERTY>
+        </ENTITY>
+        <ENTITY ent_id="Ticket">
+            <PROPERTY>id</PROPERTY>
+            <PROPERTY>name</PROPERTY>
+            <PROPERTY>cost</PROPERTY>
+        </ENTITY>
+        <ENTITY ent_id="Booking">
+            <PROPERTY>id</PROPERTY>
+            <PROPERTY>ticket_id</PROPERTY>
+            <PROPERTY>daily_route_id</PROPERTY>
+            <PROPERTY>dailu_validation_count</PROPERTY>
+        </ENTITY>
+        <ENTITY ent_id="FeedBack">
+            <PROPERTY>id</PROPERTY>
+            <PROPERTY>user_id</PROPERTY>
+            <PROPERTY>stop_id</PROPERTY>
+            <PROPERTY>route_id</PROPERTY>
+            <PROPERTY>backend_id</PROPERTY>
+            <PROPERTY>features_map</PROPERTY>
+            <PROPERTY>date_time_feedback</PROPERTY>
+        </ENTITY>
+        <ENTITY ent_id="Backend">
+            <PROPERTY>id</PROPERTY>
+            <PROPERTY>name</PROPERTY>
+            <PROPERTY>description</PROPERTY>
+        </ENTITY>
+        <ENTITY ent_id="AppUser">
+            <PROPERTY>id</PROPERTY>
+            <PROPERTY>datetime_registration</PROPERTY>
+            <PROPERTY>app_version</PROPERTY>
+        </ENTITY>
+        <ENTITY ent_id="POIType">
+            <PROPERTY>type</PROPERTY>
+        </ENTITY>
+        <ENTITY ent_id="POI">
+            <PROPERTY>name</PROPERTY>
+            <PROPERTY>photo_url</PROPERTY>
+            <PROPERTY>poi_type</PROPERTY>
+            <PROPERTY>address</PROPERTY>
+        </ENTITY>
+        <ENTITY ent_id="POIPath">
+            <PROPERTY>id</PROPERTY>
+            <PROPERTY>poi_name</PROPERTY>
+            <PROPERTY>stop_id</PROPERTY>
+            <PROPERTY>route_time</PROPERTY>
+            <PROPERTY>has_obstacles</PROPERTY>
+            <PROPERTY>road_crosses</PROPERTY>
+        </ENTITY>
+        <ENTITY ent_id="POIPathStats">
+            <PROPERTY>id</PROPERTY>
+            <PROPERTY>poi_path_id</PROPERTY>
+            <PROPERTY>date</PROPERTY>
+            <PROPERTY>use_count</PROPERTY>
+        </ENTITY>
+    </DATA>
+    <ROLES>
+        <ROLE>
+            <TITLE>User</TITLE>
+            <RESPOSIBILITY>гостевая роль</RESPOSIBILITY>
+            <TOTALUSERS>NOT LIMITED</TOTALUSERS>
+        </ROLE>
+    </ROLES>
+    <TECHSPEC>
+        <DEVTOOLS>
+            <DEV>Python</DEV>
+            <DEV>Peewee ORM</DEV>
+            <DEV>Cherrypy</DEV>
+        </DEVTOOLS>
+        <DBMS>
+            <TITLE>PostgreSQL</TITLE>
+            <VERSION>14.1</VERSION>
+        </DBMS>
+    </TECHSPEC>
+</ISSPECS>
